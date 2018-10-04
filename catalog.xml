@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/MyWebServices/HPBWebServicesService?wsdl" uri="src/conf/xml-resources/web-service-references/HPBWebServicesService/wsdl/localhost_8080/MyWebServices/HPBWebServicesService.wsdl"/>
+    <system systemId="http://localhost:8080/MyWebServices/HPBWebServicesService?xsd=1" uri="src/conf/xml-resources/web-service-references/HPBWebServicesService/wsdl/localhost_8080/MyWebServices/HPBWebServicesService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/MyWebServices/DepartmentWebServices?wsdl" uri="src/conf/xml-resources/web-service-references/DepartmentWebServices/wsdl/localhost_8080/MyWebServices/DepartmentWebServices.wsdl"/>
+    <system systemId="http://localhost:8080/MyWebServices/DepartmentWebServices?xsd=1" uri="src/conf/xml-resources/web-service-references/DepartmentWebServices/wsdl/localhost_8080/MyWebServices/DepartmentWebServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/MyWebServices/CardWebServices?wsdl" uri="src/conf/xml-resources/web-service-references/CardWebServices/wsdl/localhost_8080/MyWebServices/CardWebServices.wsdl"/>
+    <system systemId="http://localhost:8080/MyWebServices/CardWebServices?xsd=1" uri="src/conf/xml-resources/web-service-references/CardWebServices/wsdl/localhost_8080/MyWebServices/CardWebServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ISWebServices/EmployeeWSService?wsdl" uri="src/conf/xml-resources/web-service-references/EmployeeWSService/wsdl/localhost_8080/ISWebServices/EmployeeWSService.wsdl"/>
+    <system systemId="http://localhost:8080/ISWebServices/EmployeeWSService?xsd=1" uri="src/conf/xml-resources/web-service-references/EmployeeWSService/wsdl/localhost_8080/ISWebServices/EmployeeWSService.xsd_1.xsd"/>
+</catalog>

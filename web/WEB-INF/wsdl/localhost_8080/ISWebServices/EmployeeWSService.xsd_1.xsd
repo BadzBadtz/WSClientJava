@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices.ws.is/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.ws.is/">
+
+<xs:element name="DepartmentData" type="tns:departmentModel"/>
+
+<xs:element name="EmployeeData" type="tns:employeeModel"/>
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="NamingData" type="tns:namingModel"/>
+
+<xs:element name="getDepartmentByDeptID" type="tns:getDepartmentByDeptID"/>
+
+<xs:element name="getDepartmentByDeptIDResponse" type="tns:getDepartmentByDeptIDResponse"/>
+
+<xs:element name="getDeptByDeptID" type="tns:getDeptByDeptID"/>
+
+<xs:element name="getDeptByDeptIDResponse" type="tns:getDeptByDeptIDResponse"/>
+
+<xs:element name="getEmployeeData" type="tns:getEmployeeData"/>
+
+<xs:element name="getEmployeeDataResponse" type="tns:getEmployeeDataResponse"/>
+
+<xs:element name="getEmployeeName" type="tns:getEmployeeName"/>
+
+<xs:element name="getEmployeeNameResponse" type="tns:getEmployeeNameResponse"/>
+
+<xs:complexType name="getDeptByDeptID">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDeptByDeptIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmployeeName">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmployeeNameResponse">
+<xs:sequence>
+<xs:element name="NamingData" type="tns:namingModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="namingModel">
+<xs:sequence>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="FullName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmployeeData">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEmployeeDataResponse">
+<xs:sequence>
+<xs:element name="EmployeeData" type="tns:employeeModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="employeeModel">
+<xs:sequence>
+<xs:element name="CardNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="CreateDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="Department" type="xs:string" minOccurs="0"/>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="EmployeeType" type="xs:string" minOccurs="0"/>
+<xs:element name="ExpireDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="FirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="LastName" type="xs:string" minOccurs="0"/>
+<xs:element name="LoginName" type="xs:string" minOccurs="0"/>
+<xs:element name="Position" type="xs:string" minOccurs="0"/>
+<xs:element name="TitleShort" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDepartmentByDeptID">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDepartmentByDeptIDResponse">
+<xs:sequence>
+<xs:element name="DepartmentData" type="tns:departmentModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="departmentModel">
+<xs:sequence>
+<xs:element name="DepartmentCode" type="xs:string" minOccurs="0"/>
+<xs:element name="DepartmentName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
